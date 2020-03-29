@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Research | Chen's AI Lab</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <img
+            src="images/dhu.png"
+            height="150"
+            alt="DHU"
+            style="border: none; margin-bottom: 2rem;"
+          />
+          <p><a href="index.html">Home</a></p>
+          <p><a href="research.html">Research</a></p>
+          <p><a href="publications.html">Publications</a></p>
+          <p><a href="people.html">People</a></p>
+          <p><a href="gallery.html">Gallery</a></p>
+        </div>
+        <div class="col-9">
+          <h1>Research</h1>
+          <h2>Tensor Analysis</h2>
+
+          <h3>
+            Low-Rank Tensor Decomposition Models for Image Segmentation (JA-CNN,
+            LRSD_SS)
+          </h3>
+          <p>
+            <strong>Novelty</strong>: jointly representing multidimensional
+            low-rank features
+          </p>
+          <p>
+            <strong>Application</strong>: change detection (CD) in multitemporal
+            hyperspectral images
+          </p>
+          <p><strong>Publications</strong>:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Zhao </strong><strong>Chen</strong>, Bing Wang*.
+                Spectrally-spatially regularized low-rank and sparse
+                decomposition: a novel method for change detection in
+                multitemporal hyperspectral images. Remote Sensing. 2017, 9
+                (10), 1044: 1-21（SCI, EI).
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Zhao </strong><strong>Chen</strong>*, Feng Zhou.
+                Multitemporal hyperspectral image change detection by joint
+                affinity and convolutional neural networks. MultiTemp 2019 (EI).
+              </p>
+            </li>
+          </ul>
+
+          <div style="text-align: center;">
+            <img src="images/ja-cnn.png" width="80%" alt="JA-CNN" />
+            <p>JA-CNN</p>
+            <img src="images/lrsd-ss.png" height="200" alt="LRSD_SS" />
+            <p>LRSD_SS</p>
+          </div>
+
+          <h3>
+            Tensor Networks for Image Classification and Regression (TCNN)
+          </h3>
+          <p>
+            <strong>Novelty: </strong>the network layers are constructed by
+            tensor decomposition models, being able to recognize low-rank
+            patterns as well as representing deep features
+          </p>
+          <p>
+            <strong>Application: </strong>cyclone intensity estimation with
+            meteorological remote sensing images
+          </p>
+          <p><strong>Publications</strong>:</p>
+          <ul>
+            <li>
+              <p>
+                Xingxing Yu, <strong>Zhao Chen</strong>* , Guangchen Chen, He
+                Zhang. A tensor network for tropical cyclone wind speed
+                estimation. IGARSS 2019 (EI).
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Zhao Chen</strong>*, Xingxing Yu. A novel framework
+                based on tensor networks for tropical cyclone intensity
+                estimation. IEEE Transactions on Geoscience and Remote Sensing
+                (undergoing major revision).
+              </p>
+            </li>
+          </ul>
+          <div style="text-align: center;">
+            <img src="images/c-tcnn.png" width="80%" alt="C-TCNN" />
+            <p>An Architecture of the Proposed Tensor Networks (C-TCNN)</p>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="images/tcnn-convergence.png"
+                    height="200"
+                    alt="Convergence"
+                  />
+                  <p>Convergence Curve</p>
+                </div>
+                <div class="col">
+                  <img
+                    src="images/tcnn-feature-maps.png"
+                    height="200"
+                    alt="Feature Maps"
+                  />
+                  <p>Feature Maps</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Weakly Supervised Learning</h2>
+          <h3>A Weakly Supervised Network for Image Segmentation (WESUP)</h3>
+          <p>
+            <strong>Novelty: </strong>learning hierarchical features regularized
+            by deep label propagation&nbsp;
+          </p>
+          <p>
+            <strong>Advantage: </strong>only using very sparse manual
+            annotations
+          </p>
+          <p>
+            <strong>Application: </strong>histopathology image segmentation/
+            histology object detection
+          </p>
+          <div style="text-align: center;">
+            <img src="images/wesup.png" width="80%" alt="WESUP" />
+            <p>WESUP</p>
+            <img src="images/wesup-qual.png" width="50%" alt="LRSD_SS" />
+            <p>
+              Data Sets: GlaS3, CRAG7 and LUSC (In-House) Weakly Supervised
+              <br />
+              Methods for Comparison: CDWS-MIL8 and SizeLoss9
+            </p>
+            <img src="images/wesup-pdl1.png" width="80%" alt="LRSD_SS" />
+            <p>
+              Segmentation of a PD-L1 Whole Slide Image <br />
+              (In-House PD-L1 Slide)
+            </p>
+          </div>
+
+          <h2>Manifold Learning</h2>
+          <h3>
+            A Manifold Regularized Regression Network for Object Counting (MRRN)
+          </h3>
+          <p>
+            <strong>Novelty: </strong>combining regression and manifold learning
+            based on a pre-trained deep network
+          </p>
+          <p>
+            <strong>Advantage: </strong>performing counting and localization
+            simultaneously
+          </p>
+          <p>
+            <strong>Application: </strong>histopathology/ biomedical object
+            counting and localization
+          </p>
+          <div style="text-align: center;">
+            <img class="lozad" src="images/mrrn.png" width="60%" alt="WESUP" />
+            <p>MRRN</p>
+            <img src="images/bacteria-counting.png" width="60%" alt="LRSD_SS" />
+            <p>
+              Bacteria Counting <br />
+              (Synthetic Data)
+            </p>
+            <img src="images/cell-counting.png" width="80%" alt="LRSD_SS" />
+            <p>
+              Cancerous Cell Counting <br />
+              (In-House PD-L1 Slides)
+            </p>
+          </div>
+
+          <h2>Classification based on Affinity Scoring</h2>
+          <p>
+            <strong>Novelty: </strong>exploiting local consistency, spectral
+            variability and prior knowledge simultaneously by affinity scoring;
+            being able to be adapted to supervised or semisupervised
+            classification
+          </p>
+          <p>
+            <strong>Application: </strong>spectral-spatial classification for
+            hyperspectral images
+          </p>
+          <p><strong>Publications</strong>:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Z. Chen</strong> and B. Wang, “Semisupervised
+                spectral-spatial classification of hyperspectral imagery with
+                affinity scoring,” IEEE Geoscience and Remote Sensing Letters.
+                vol. 12, no. 8, Aug. 2015, pp. 1710-1714.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Z. Chen</strong> and B. Wang, “Spectral-Spatial
+                Classification Based on Affinity Scoring for Hyperspectral
+                Imagery,” IEEE J. Sel. Top. Appl. Earth Observ. Remote Sens.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Z. Chen</strong> and B. Wang, “Spectral-spatial
+                classification for hyperspectral imagery: a novel combination
+                method based on affinity scoring,” SCIENCE CHINA Information
+                Sciences
+              </p>
+            </li>
+          </ul>
+          <div style="text-align: center;">
+            <div class="row">
+              <div class="col">
+                <img src="images/research-aff-1.png" width="90%" alt="aff-1" />
+              </div>
+              <div class="col">
+                <img src="images/research-aff-2.png" width="90%" alt="aff-2" />
+              </div>
+            </div>
+            <br />
+            <img src="images/research-aff-3.png" width="90%" alt="aff-3" />
+            <p>An example of affinity scoring</p>
+            <img src="images/research-aff-4.png" width="90%" alt="aff-4" />
+            <p>
+              From left to right: oversegmentation by SLIC, SVM classification
+              (OA = 79.08%), SLIC + CRAS classification (OA = 96.17%) and SLIC +
+              SCAS classification (OA = 97.02%) when only 5% samples are used
+              for training
+            </p>
+          </div>
+
+          <h2>Subtensor-based Lower Rank Tensor Analysis</h2>
+          <p>
+            <strong>Novelty: </strong>leveraging local consistency by subtensors
+            and representing low-rank features by tensor decomposition
+          </p>
+          <p>
+            <strong>Application: </strong>semisupervised spectral-spatial
+            classification for hyperspectral images
+          </p>
+          <p><strong>Publications</strong>:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Z. Chen</strong>, B. Wang and L. Zhang, “Dimensionality
+                reduction and Classification based on lower rank tensor analysis
+                for hyperspectral imagery,” Journal of Infrared and Millimeter
+                Waves, vol. 32, no. 6, 2013, pp. 569-575.
+              </p>
+            </li>
+          </ul>
+          <div style="text-align: center;">
+            <img
+              src="images/mode-1-unfolding-squashed.jpg"
+              width="80%"
+              alt=""
+            />
+            <p></p>
+            <img src="images/subtensor-fig-2-squashed.jpg" width="80%" alt="" />
+            <p></p>
+            <img src="images/subtensor-fig-3-squashed.jpg" width="80%" alt="" />
+            <p>
+              From left to right: false RGB and ground truth of Indian Pines
+              HSIs
+            </p>
+            <br />
+            <img src="images/subtensor-fig-4-squashed.jpg" width="80%" alt="" />
+            <p>
+              Outcomes of S-LRTA with difference subtensor sizes. From left to
+              right: 2×2, OA=99.74%; 6×6, 98.82%; 10×10, 92.37%
+            </p>
+          </div>
+
+          <h2>A General Framework for Image Fusion</h2>
+          <p>
+            <strong>Novelty: </strong>exploiting similarities between
+            panchromatic/multispectral image (Pan/ MSI) fusion and multispectral
+            /hyperspectral image (MSI/ HSI) fusion; generalizing
+            well-established Pan/ MSI fusion methods by spectral resampling and
+            region-wise fusion
+          </p>
+          <p>
+            <strong>Application: </strong>multispectral /hyperspectral image
+            fusion
+          </p>
+          <p><strong>Publications</strong>:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Z. Chen</strong>, H. Pu, B. Wang and G. Jiang, “Fusion
+                of hyperspectral and multispectraln images : a novel framework
+                based on generalization of pan-sharpening methods,” IEEE Geosci.
+                Remote Sens. Lett., vol. 11, no.8, pp. 1418-1422, Aug. 2014.
+              </p>
+            </li>
+          </ul>
+          <div style="text-align: center;">
+            <img
+              src="images/image-fusion-fig-1-squashed.jpg"
+              width="80%"
+              alt=""
+            />
+            <p></p>
+            <img
+              src="images/image-fusion-fig-2-squashed.jpg"
+              width="80%"
+              alt=""
+            />
+            <p></p>
+            <img
+              src="images/image-fusion-fig-3-squashed.jpg"
+              width="80%"
+              alt=""
+            />
+            <p></p>
+            <img
+              src="images/image-fusion-fig-4-squashed.jpg"
+              width="80%"
+              alt=""
+            />
+          </div>
+
+          <h2>Computational Intelligence and Multi-objective Optimization</h2>
+          <p>
+            <strong
+              >High-dimensional Double-swarm PSO (HDPSO), Adaptive PSO(APSO),
+              Multiobjective PSO(MOPSO)
+            </strong>
+          </p>
+          <p>
+            <strong>Novelty: </strong>Improved PSO and advanced constraint
+            handling strategies are combined for NMF-based spectral unmixing
+          </p>
+          <p>
+            <strong>Application: </strong>linear spectral unmixing for
+            hyperspectral remote sensing images
+          </p>
+          <p><strong>Publications</strong>:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Bin Yang</strong>, Wenfei Luo, and Bin Wang,
+                “Constrained nonnegative matrix factorization based on particle
+                swarm optimization for hyperspectral unmixing,” IEEE J. Sel.
+                Top. Appl. Earth Obs. Remote Sens., vol. 10, no. 8, pp.
+                3693–3710, Aug. 2017.
+              </p>
+            </li>
+          </ul>
+          <div style="text-align: center;">
+            <img src="images/multi-obj-optim-squashed.jpg" width="80%" alt="" />
+          </div>
+
+          <h2>Nonlinear Spectral Unmixing I</h2>
+          <p><strong>Band-Wise Nonlinear Spectral Unmixing (BNLSU) </strong></p>
+          <p>
+            <strong>Novelty: </strong>wavelength dependent multiple scatterings
+            and band-wise change of nonlinearity are accurately revealed for
+            nonlinear spectral unmixing
+          </p>
+          <p>
+            <strong>Application: </strong>nonlinear spectral unmixing for
+            hyperspectral remote sensing images
+          </p>
+          <p><strong>Publications</strong>:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Bin Yang</strong> and Bin Wang, “Band-wise nonlinear
+                unmixing for hyperspectral imagery using an extended multilinear
+                mixing model,” IEEE Trans. Geosci. Remote Sens., vol. 56, no.
+                11, pp. 6747–6762, Nov. 2018.
+              </p>
+            </li>
+          </ul>
+          <div style="text-align: center;">
+            <img
+              src="images/nonlinear-spec-unmix-squashed.jpg"
+              width="80%"
+              alt=""
+            />
+          </div>
+
+          <h2>Nonlinear Spectral Unmixing II</h2>
+          <p>
+            <strong
+              >Geometric Characteristics of the BMMs Based Abundance Estimation
+              (GCBAE)
+            </strong>
+          </p>
+          <p>
+            <strong>Novelty: </strong>the issue of collinearity is addressed by
+            constructing a nonlinear vertex; geometric projection-bias
+            correction is carried out for accurate abundance estimation under
+            the FM, GBM, and PPNM.
+          </p>
+          <p>
+            <strong>Application: </strong>nonlinear spectral unmixing for
+            hyperspectral remote sensing images
+          </p>
+          <p><strong>Publications</strong>:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Bin Yang</strong>, Bin Wang, and Zongmin Wu, “Nonlinear
+                hyperspectral unmixing based on geometric characteristics of
+                bilinear mixture models,” IEEE Trans. Geosci. Remote Sens., vol.
+                56, no. 2, pp. 694–714, Feb. 2018.
+              </p>
+            </li>
+          </ul>
+          <div style="text-align: center;">
+            <img
+              src="images/nonlinear-spec-unmix-2-squashed.jpg"
+              width="80%"
+              alt=""
+            />
+          </div>
+
+          <h2>Nonlinear Spectral Unmixing III</h2>
+          <p>
+            <strong
+              >Hypergraph and Fuzzy-Assessment Based Nonlinear Endmember
+              Extraction (HFNEE)
+            </strong>
+          </p>
+          <p>
+            <strong>Novelty: </strong>Hypergraph and Fuzzy-Assessment Based
+            Nonlinear Endmember Extraction (HFNEE)
+          </p>
+          <p>
+            <strong>Application: </strong>nonlinear spectral unmixing for
+            hyperspectral remote sensing images
+          </p>
+          <p><strong>Publications</strong>:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Bin Yang</strong>, Zhao Chen, and Bin Wang, “Nonlinear
+                endmember identification for hyperspectral Imagery via
+                hyperpath-based simplex growing and fuzzy assessment,” IEEE J.
+                Sel. Top. Appl. Earth Obs. Remote Sens., vol. 13, no. 1, pp.
+                351–366, Jan. 2020.
+              </p>
+            </li>
+          </ul>
+          <div style="text-align: center;">
+            <img
+              src="images/nonlinear-spec-unmix-3-squashed.jpg"
+              width="80%"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
